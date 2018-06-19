@@ -1,0 +1,10 @@
+# dependencies
+/node_modules
+/bower_components
+//rtz5KTP8
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
