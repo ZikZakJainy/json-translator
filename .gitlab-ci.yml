@@ -7,7 +7,7 @@ testing_build:
     script:
       - echo "Build"
     only:
-      - testing
+      - master
 
 deploy_to_heroku:
     type: deploy
@@ -18,4 +18,4 @@ deploy_to_heroku:
       - gem install dpl -v 1.8.47
       - dpl --provider=heroku --app=$heroku_app_name --api-key=$heroku_api
     only:
-      - testing
+      - master
