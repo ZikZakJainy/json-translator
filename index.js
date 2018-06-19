@@ -50,9 +50,9 @@ mongoose.connection.on('error', function(err) {
 
 // require('./routes').default(app);
 // var target = 'ru';
-// app.get('/api/emails', function (req, res) {
-//     res.json({status: 'GET /api/users'});
-// });
+app.get('/api/emails', function (req, res) {
+    res.json({status: 'GET /api/users'});
+});
 app.post('/translate/:target', (req, res) => {
 //   console.log('hitting...'+JSON.stringify(req.params.target));
 // console.log('hitting...'+JSON.stringify(req.body));
